@@ -4,6 +4,19 @@
 
     所有构建工具都是基于nodejs平台运行的~模块化默认采用commonjs。
 */
+
+const {resolve} = require('path')
 module.exports = {
-	
+	//webpack配置
+	//入口起点
+	entry:'./src/index.js',
+	output:{
+		//输出文件名
+		filename:'built.js',
+		//输出路径
+		path:resolve(__dirname,'build')
+	},
+	module:{
+		rules:[]
+	}
 }
