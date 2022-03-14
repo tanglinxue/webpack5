@@ -206,7 +206,7 @@ module.exports = {
   },
   // 生产环境下会自动压缩js代码
   mode: 'development',
-  devtool: 'hidden-source-map',
+  devtool: 'eval-source-map',
 };
 
 
